@@ -1,2 +1,2 @@
-# OOM - Mini Project
+OOM - Mini Project
 # Alumni Connect System
