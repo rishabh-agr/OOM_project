@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alumni Connect System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Alumni Connect</div>
+    <ul class="nav-links">
+      <li><a href="#job-postings">Job Opportunities</a></li>
+      <li><a href="#donations">Donations</a></li>
+      <li><a href="#success-stories">Success Stories</a></li>
+      <li><a href="#about-college">About College</a></li>
+      <li><a href="#networking">Networking</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Alumni Connect</h1>
+      <p>Empowering alumni, students, and the college community to grow together.</p>
+      <a href="#job-postings" class="btn-cta">Explore Job Opportunities</a>
+    </div>
+  </header>
+
+  <!-- Job Opportunities Section -->
+  <section id="job-postings" class="section gradient-bg">
+    <h2>Job Opportunities</h2>
+    <div class="job-listing">
+      <div class="job-item">
+        <h3>Software Developer</h3>
+        <p>Company: Tech Innovations</p>
+        <a href="#" class="apply-btn" onclick="openModal()">Apply Now</a>
+      </div>
+      <div class="job-item">
+        <h3>Data Analyst</h3>
+        <p>Company: Data Works</p>
+        <a href="#" class="apply-btn" onclick="openModal()">Apply Now</a>
+      </div>
+      <!-- More jobs can be added here -->
+    </div>
+  </section>
+
+  <!-- Modal Form (Hidden by default) -->
+<div id="apply-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2 id="modal-title">Job Application Form</h2>
+      
+      <!-- Job Application Form -->
+      <form id="job-application-form" onsubmit="handleFormSubmit(event)">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" required>
+  
+        <button type="submit" class="btn-cta">Submit Application</button>
+      </form>
+  
+      <!-- Thank You Message (hidden by default) -->
+      <div id="thank-you-message" style="display: none;">
+        <h3>Thank you for applying!</h3>
+        <p>We will get back to you soon.</p>
+        <button class="btn-cta" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Donations Section -->
+  <section id="donations" class="section bg-light">
+    <h2>Make a Donation</h2>
+    <p>Your donation helps support programs and initiatives at the college. Contribute today to make a difference!</p>
+    <a href="#donate-form" class="btn-cta">Donate Now</a>
+  </section>
+
+  <!-- Success Stories Section -->
+  <section id="success-stories" class="section gradient-bg">
+    <h2>Success Stories</h2>
+    <div class="story-list">
+      <div class="story-item">
+        <h3>John Doe's Success Story</h3>
+        <p>John went on to become a senior software engineer at Google. Read his full story and journey!</p>
+        <a href="#" class="btn-cta">Read More</a>
+      </div>
+      <!-- More stories can be added here -->
+    </div>
+  </section>
+
+  <!-- About College Section -->
+  <section id="about-college" class="section bg-light">
+    <h2>About the College</h2>
+    <p>Our college offers a rich variety of courses, programs, and departments. Explore our offerings and see how we can shape your future!</p>
+    <a href="#college-info" class="btn-cta">Learn More</a>
+  </section>
+
+  <!-- Networking Section -->
+  <section id="networking" class="section gradient-bg">
+    <h2>Connect with Alumni and Students</h2>
+    <p>Expand your professional network and build valuable connections with alumni and students.</p>
+    <a href="#networking" class="btn-cta">Join Now</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Alumni Connect System. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
